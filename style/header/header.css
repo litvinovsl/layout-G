@@ -52,6 +52,7 @@
 
 .header__logo {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;

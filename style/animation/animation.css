@@ -119,13 +119,14 @@
     position: absolute;
     width: 836px;
     height: 557px;
-    right: -75px;
+    right: 0;
     bottom: 0;
     z-index: -1;
 }
 .animation-conteiner{
     display: flex;
     position: relative;
+    
 }
 
 .animation__girl{
