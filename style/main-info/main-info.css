@@ -1,0 +1,39 @@
+.main-info {
+    padding-top: 120px;
+    min-width: 478px;
+}
+
+.main-info__text {
+    max-width: 375px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #2D2D2D;
+    margin: 0;
+}
+
+.main-info__text_orange {
+    color: #FF8345;
+}
+
+.main-info__text_bank {
+    max-width: 475px;
+    margin-bottom: 22px;
+}
+
+.main-info__paragraph {
+    max-width: 444px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #7C7C7C;
+    margin: 0 0 30px;
+}
+
+.button_main {
+    width: 130px;
+    height: 46px;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 22px;
+}

@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1108px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.header__navigations {
+    display: flex;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 30px;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 108px;
+    height: 42px;
+    border: none;
+    background-color: #48B774;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.header__logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.header__logo {
+    margin: 0;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #48B774;
+}
+
+.header__logo-circle {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    align-self: center;
+    border: #F9A779 5px solid;
+}
+
+.header__name {
+    margin: 0;
+    align-self: center;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    color: #2D2D2D;
+}
