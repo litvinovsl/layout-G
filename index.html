@@ -37,9 +37,9 @@
             <button class="button opacity button_main" type="button">Get Started</button>
         </section>
         <form class="form-search">
-            <input class="form-search__input" type="text" placeholder="Where do you want to call?">
+            <input class="form-search__input" minlength="4" maxlength="12" pattern="^[^!@#$%^&*()]*$" type="text" placeholder="Where do you want to call?">
             <button class="button button__search opacity">
-                <img class="button__search-img" src="./img/search.svg">
+                <img class="button__search-img" type="button" src="./img/search.svg">
             </button>
         </form>
         <section class="users">
