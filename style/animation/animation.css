@@ -148,10 +148,10 @@
 }
 
 .animation__container-all {
-    position: absolute;
+    position: fixed;
     width: 836px;
     height: 557px;
-    right: 0;
+    right: -100px;
     bottom: 0;
     z-index: -1;
 }
@@ -351,8 +351,6 @@
     .animation__container-all {
         width: 500px;
         height: 333px;
-        right: 0;
-        top: 258px;
     }
 
     .animation__girl {
@@ -414,6 +412,6 @@
 }
 @media screen and (max-width: 480px) {
     .animation__container-all {
-        display: none;
+        /* display: none; */
     }
 }
