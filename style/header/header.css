@@ -9,6 +9,7 @@
 
 .header__navigations {
     display: flex;
+
 }
 
 .header__links {
@@ -77,4 +78,134 @@
     font-size: 25px;
     line-height: 38px;
     color: #2D2D2D;
+}
+
+
+.side-menu,
+.hamb-line {
+    display: none;
+}
+
+
+@media screen and (max-width: 1130px) {
+    .header {
+        max-width: calc(100% - 60px);
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .header__links {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header{
+        padding-top: 10px;
+    }
+    .header__navigations {
+        display: none;
+    }
+
+    .header__links {
+        flex-direction: column;
+    }
+
+    .header__logo-circle {
+        width: 24px;
+        height: 24px;
+        border-width: 3px;
+    }
+
+    .header__logo,
+    .header__name {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .header__logo-container {
+        gap: 4px;
+    }
+    .header__link-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .button {
+        font-size: 12px;
+        line-height: 20px;
+        width: 88px;
+        height: 40px;
+    }
+
+    .hamb {
+
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+    }
+
+    /* Style label tag */
+
+    .hamb-line {
+        background: black;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    /* Style span tag */
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: black;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    /* .side-menu:checked~.header__navigations {
+        display: flex;
+        flex-direction: column;
+    } */
+    .side-menu:checked~.header__navigations {
+        display: flex;
+    }
+
+    .side-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .side-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 21px;
+    }
+
+    .side-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 21px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .header__logo-container{
+        display: none;
+    }
 }

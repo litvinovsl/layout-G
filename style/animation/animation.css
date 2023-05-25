@@ -3,119 +3,151 @@
         top: 112px;
         left: 350px;
     }
+
     /* 25%{
         top: 87px;
         left: 294px
     } */
-    50%{
+    50% {
         top: 74px;
         left: 236px;
     }
-    100%{
+
+    100% {
         top: -27px;
         left: 172px;
     }
 }
+
 @keyframes spin-ita {
     0% {
         top: 112px;
         left: 350px;
     }
-    100%{
+
+    100% {
         top: -97px;
         left: 361px;
     }
 }
+
 @keyframes spin-portu {
     0% {
         top: 123px;
         left: 361px;
     }
-    50%{
+
+    50% {
         top: 58px;
         left: 457px;
     }
-    100%{
+
+    100% {
         top: 9px;
         left: 542px;
     }
 }
+
 @keyframes spin-portu-mr {
     0% {
         top: 123px;
         left: 361px;
     }
-    100%{
+
+    100% {
         top: 176px;
         left: 581px;
     }
 }
+
 @keyframes spin-portu-ml {
     0% {
         top: 123px;
         left: 361px;
     }
-    100%{
+
+    100% {
         top: 176px;
         left: 145px;
     }
 }
+
 @keyframes myOrbit-ita {
     from {
         top: 112px;
-        left: 350px; 
-        transform: rotate(-90deg) translateX(220px) rotate(90deg); }
-    to   {
-        top: 112px;
-        left: 350px;  
-        transform: rotate(270deg) translateX(220px) rotate(-270deg); }
-}
-@keyframes myOrbit-eng {
-    from { 
+        left: 350px;
+        transform: rotate(-90deg) translateX(220px) rotate(90deg);
+    }
+
+    to {
         top: 112px;
         left: 350px;
-        transform: rotate(-140deg) translateX(220px) rotate(140deg); }
-    to   {
-        top: 112px;
-        left: 350px; 
-        transform: rotate(220deg) translateX(220px) rotate(-220deg); }
+        transform: rotate(270deg) translateX(220px) rotate(-270deg);
+    }
 }
+
+@keyframes myOrbit-eng {
+    from {
+        top: 112px;
+        left: 350px;
+        transform: rotate(-140deg) translateX(220px) rotate(140deg);
+    }
+
+    to {
+        top: 112px;
+        left: 350px;
+        transform: rotate(220deg) translateX(220px) rotate(-220deg);
+    }
+}
+
 @keyframes myOrbit-portu {
-    from { 
+    from {
         top: 123px;
         left: 361px;
-        transform: rotate(-35deg) translateX(220px) rotate(35deg); }
-    to   {
+        transform: rotate(-35deg) translateX(220px) rotate(35deg);
+    }
+
+    to {
         top: 123px;
-        left: 361px; 
-        transform: rotate(325deg) translateX(220px) rotate(-325deg); }
+        left: 361px;
+        transform: rotate(325deg) translateX(220px) rotate(-325deg);
+    }
 }
 
 @keyframes myOrbit-portu-mr {
-    from { 
+    from {
         top: 123px;
         left: 361px;
-        transform: rotate(14deg) translateX(222px) rotate(-14deg); }
-    to   {
+        transform: rotate(14deg) translateX(222px) rotate(-14deg);
+    }
+
+    to {
         top: 123px;
-        left: 361px; 
-        transform: rotate(374deg) translateX(222px) rotate(-374deg); }
+        left: 361px;
+        transform: rotate(374deg) translateX(222px) rotate(-374deg);
+    }
 }
+
 @keyframes myOrbit-portu-ml {
-    from { 
+    from {
         top: 123px;
         left: 361px;
-        transform: rotate(-194deg) translateX(222px) rotate(194deg); }
-    to   { 
+        transform: rotate(-194deg) translateX(222px) rotate(194deg);
+    }
+
+    to {
         top: 123px;
         left: 361px;
-        transform: rotate(166deg) translateX(222px) rotate(-166deg); }
+        transform: rotate(166deg) translateX(222px) rotate(-166deg);
+    }
 }
-.p-a{
+
+.p-a {
     position: absolute;
     z-index: -2;
 }
-.animation__container-all{
+
+.animation__container-all {
     position: absolute;
     width: 836px;
     height: 557px;
@@ -123,42 +155,49 @@
     bottom: 0;
     z-index: -1;
 }
-.animation-conteiner{
+
+.animation-conteiner {
     display: flex;
     position: relative;
-    
+
 }
 
-.animation__girl{
+.animation__girl {
     z-index: -1;
 }
-.animation__eng{
+
+.animation__eng {
     top: 112px;
     left: 350px;
-    animation: spin-eng 2s linear 1 .4s forwards, myOrbit-eng  12s linear 4s infinite;
+    animation: spin-eng 2s linear 1 .4s forwards, myOrbit-eng 12s linear 4s infinite;
 }
-.animation__ita{
+
+.animation__ita {
     top: 123px;
     left: 361px;
-    animation: spin-ita 2s linear 1 .8s forwards, myOrbit-ita  12s linear 4s infinite;
+    animation: spin-ita 2s linear 1 .8s forwards, myOrbit-ita 12s linear 4s infinite;
 
 }
-.animation__portu{
+
+.animation__portu {
     top: 123px;
     left: 361px;
-    animation: spin-portu 2s linear 1 1.2s forwards, myOrbit-portu  12s linear 4s infinite;
+    animation: spin-portu 2s linear 1 1.2s forwards, myOrbit-portu 12s linear 4s infinite;
 }
-.animation__portu-mr{
+
+.animation__portu-mr {
     top: 123px;
     left: 361px;
-    animation: spin-portu-mr 2s linear 1 1.6s forwards, myOrbit-portu-mr  12s linear 4s infinite;
+    animation: spin-portu-mr 2s linear 1 1.6s forwards, myOrbit-portu-mr 12s linear 4s infinite;
 }
-.animation__portu-ml{
+
+.animation__portu-ml {
     top: 123px;
     left: 361px;
-    animation: spin-portu-ml 2s linear 1 2s forwards, myOrbit-portu-ml  12s linear 4s infinite; 
+    animation: spin-portu-ml 2s linear 1 2s forwards, myOrbit-portu-ml 12s linear 4s infinite;
 }
-.animation__circle{
+
+.animation__circle {
     border: #E8E8E8 solid 2px;
     width: 450px;
     height: 450px;
@@ -167,7 +206,8 @@
     top: -52px;
     left: 187px;
 }
-.animation__circle_green{
+
+.animation__circle_green {
     width: 280px;
     height: 280px;
     border-radius: 50%;
@@ -175,4 +215,205 @@
     background-color: #48B774;
     top: 77px;
     left: 275px;
+}
+
+@media screen and (max-width: 815px) {
+    @keyframes spin-eng {
+        0% {
+            top: 34px;
+            left: 202px;
+        }
+
+        100% {
+            top: -45px;
+            left: 104px;
+        }
+    }
+
+    @keyframes myOrbit-eng {
+        from {
+            top: 34px;
+            left: 202px;
+            transform: rotate(-140deg) translateX(125px) rotate(140deg);
+        }
+
+        to {
+            top: 34px;
+            left: 202px;
+            transform: rotate(220deg) translateX(125px) rotate(-220deg);
+        }
+    }
+
+    @keyframes spin-ita {
+        0% {
+            top: 24px;
+            left: 190px;
+        }
+
+        100% {
+            top: -100px;
+            left: 191px;
+        }
+    }
+
+    @keyframes myOrbit-ita {
+        from {
+            top: 24px;
+            left: 190px;
+            transform: rotate(-90deg) translateX(125px) rotate(90deg);
+        }
+
+        to {
+            top: 24px;
+            left: 190px;
+            transform: rotate(270deg) translateX(125px) rotate(-270deg);
+        }
+    }
+
+    @keyframes spin-portu {
+        0% {
+            top: 30px;
+            left: 197px;
+        }
+
+        100% {
+            top: -45px;
+            left: 295px;
+        }
+    }
+
+    @keyframes myOrbit-portu {
+        from {
+            top: 30px;
+            left: 197px;
+            transform: rotate(-35deg) translateX(125px) rotate(35deg);
+        }
+
+        to {
+            top: 30px;
+            left: 197px;
+            transform: rotate(325deg) translateX(125px) rotate(-325deg);
+        }
+    }
+
+    @keyframes spin-portu-mr {
+        0% {
+            top: 34px;
+            left: 199px;
+        }
+
+        100% {
+            top: 64px;
+            left: 320px;
+        }
+    }
+
+    @keyframes myOrbit-portu-mr {
+        from {
+            top: 34px;
+            left: 199px;
+            transform: rotate(14deg) translateX(125px) rotate(-14deg);
+        }
+
+        to {
+            top: 34px;
+            left: 199px;
+            transform: rotate(374deg) translateX(125px) rotate(-374deg);
+        }
+    }
+
+    @keyframes spin-portu-ml {
+        0% {
+            top: 34px;
+            left: 199px;
+        }
+
+        100% {
+            top: 66px;
+            left: 77px;
+        }
+    }
+
+    @keyframes myOrbit-portu-ml {
+        from {
+            top: 34px;
+            left: 199px;
+            transform: rotate(-194deg) translateX(125px) rotate(194deg);
+        }
+
+        to {
+            top: 34px;
+            left: 199px;
+            transform: rotate(166deg) translateX(125px) rotate(-166deg);
+        }
+    }
+
+    .animation__container-all {
+        width: 500px;
+        height: 333px;
+        right: 0;
+        top: 258px;
+    }
+
+    .animation__girl {
+        width: 500px;
+        height: auto;
+    }
+
+    .animation__eng {
+        top: 34px;
+        left: 202px;
+        width: 100px;
+        height: 100px;
+        animation: none;
+        animation: spin-eng 4s linear 1 .4s forwards, myOrbit-eng 50s linear 6s infinite;
+
+    }
+
+    .animation__ita {
+        top: 24px;
+        left: 190px;
+        animation: spin-ita 4s linear 1 .8s forwards, myOrbit-ita 50s linear 6s infinite;
+
+    }
+
+    .animation__portu {
+        top: 30px;
+        left: 197px;
+        width: 110px;
+        height: 110px;
+        animation: spin-portu 4s linear 1 1.2s forwards, myOrbit-portu 50s linear 6s infinite;
+    }
+
+    .animation__portu-mr {
+        top: 34px;
+        left: 199px;
+        animation: spin-portu-mr 4s linear 1 1.6s forwards, myOrbit-portu-mr 50s linear 6s infinite;
+    }
+
+    .animation__portu-ml {
+        top: 34px;
+        left: 199px;
+        animation: none;
+        animation: spin-portu-ml 4s linear 1 2s forwards, myOrbit-portu-ml 50s linear 6s infinite;
+    }
+
+    .animation__circle {
+        width: 250px;
+        height: 250px;
+        top: -52px;
+        left: 121px;
+    }
+
+    .animation__circle_green {
+        width: 120px;
+        height: 120px;
+        top: 29px;
+        left: 190px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .animation__container-all {
+        display: none;
+    }
 }

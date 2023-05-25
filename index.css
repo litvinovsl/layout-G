@@ -28,3 +28,9 @@ html{
     max-width: 1108px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1130px) {
+    .content {
+        max-width: calc(100% - 60px);
+    }
+}
